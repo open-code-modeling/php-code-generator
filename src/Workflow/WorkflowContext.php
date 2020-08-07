@@ -18,6 +18,14 @@ interface WorkflowContext
      */
     public function get(string $slotName);
 
+    public function has(string $slotName): bool;
+
+    /**
+     * @param string $slotName
+     * @param string|null $type Checks also slot type
+     */
+    public function assertSlot(string $slotName, string $type = null): void;
+
     /**
      * Returns input data for given description
      *
@@ -31,4 +39,9 @@ interface WorkflowContext
      * @param mixed $slotValue
      */
     public function put(string $slotName, $slotValue): void;
+
+    /**
+     * @return string[]
+     */
+    public function getSlotNames(): array;
 }
