@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
-class WorkflowContextMap implements WorkflowContext
+final class WorkflowContextMap implements WorkflowContext
 {
     /**
      * @var array

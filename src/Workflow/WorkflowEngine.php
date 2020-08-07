@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
-class WorkflowEngine
+final class WorkflowEngine
 {
     /**
      * Iterates over given component descriptions and

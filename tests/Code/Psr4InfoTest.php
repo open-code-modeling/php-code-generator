@@ -14,7 +14,7 @@ use Laminas\Filter\Word\SeparatorToSeparator;
 use OpenCodeModeling\CodeGenerator\Code\Psr4Info;
 use PHPUnit\Framework\TestCase;
 
-class Psr4InfoTest extends TestCase
+final class Psr4InfoTest extends TestCase
 {
     /**
      * @test

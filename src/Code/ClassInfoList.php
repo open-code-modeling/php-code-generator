@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Code;
 
-class ClassInfoList
+final class ClassInfoList
 {
     /**
      * @var ClassInfo[]

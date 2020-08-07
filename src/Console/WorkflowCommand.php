@@ -20,7 +20,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class WorkflowCommand extends Command
+final class WorkflowCommand extends Command
 {
     protected function configure()
     {

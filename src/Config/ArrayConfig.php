@@ -12,7 +12,7 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 
 use OpenCodeModeling\CodeGenerator\Workflow\Description;
 
-class ArrayConfig implements Component
+final class ArrayConfig implements Component
 {
     /**
      * @var Description[]

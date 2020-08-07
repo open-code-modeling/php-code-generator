@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
-class ComponentList implements ComponentCollection
+final class ComponentList implements ComponentCollection
 {
     private $position = 0;
 
