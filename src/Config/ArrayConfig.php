@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace OpenCodeModeling\CodeGenerator\Config;
 
 use OpenCodeModeling\CodeGenerator\Workflow\Description;
+use Symfony\Component\Console\Command\Command;
 
 final class ArrayConfig implements Component
 {
@@ -18,6 +19,11 @@ final class ArrayConfig implements Component
      * @var Description[]
      **/
     private $config;
+
+    /**
+     * @var Command[]
+     **/
+    private $consoleCommands = [];
 
     public function __construct(Description ...$config)
     {
@@ -27,5 +33,20 @@ final class ArrayConfig implements Component
     public function componentDescriptions(): array
     {
         return $this->config;
+    }
+
+    public function consoleCommands(): iterable
+    {
+        return $this->consoleCommands;
+    }
+
+    /**
+     * @param Command ...$consoleCommands
+     */
+    public function addConsoleCommands(Command ...$consoleCommands): void
+    {
+        foreach ($consoleCommands as $consoleCommand) {
+            $this->consoleCommands[] = $consoleCommand;
+        }
     }
 }

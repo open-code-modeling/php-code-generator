@@ -19,6 +19,11 @@ final class FilePhpResolver implements Resolver
      **/
     private $file;
 
+    /**
+     * @var Config
+     */
+    private $resolved;
+
     public function __construct(string $file)
     {
         $this->file = $file;
@@ -26,6 +31,10 @@ final class FilePhpResolver implements Resolver
 
     public function resolve(WorkflowContext $workflowContext): Config
     {
-        return require $this->file;
+        if ($this->resolved === null) {
+            $this->resolved = require $this->file;
+        }
+
+        return $this->resolved;
     }
 }

@@ -10,6 +10,14 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
+use Symfony\Component\Console\Command\Command;
+
 interface Config
 {
+    /**
+     * Optional list of CLI commands to register for Code Generation
+     *
+     * @return Command[]
+     */
+    public function consoleCommands(): iterable;
 }

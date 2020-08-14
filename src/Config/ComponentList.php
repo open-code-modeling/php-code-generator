@@ -10,6 +10,8 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
+use Symfony\Component\Console\Command\Command;
+
 final class ComponentList implements ComponentCollection
 {
     private $position = 0;
@@ -18,6 +20,11 @@ final class ComponentList implements ComponentCollection
      * @var Component[]
      **/
     private $config;
+
+    /**
+     * @var Command[]
+     **/
+    private $consoleCommands = [];
 
     public function __construct(Component ...$config)
     {
@@ -47,5 +54,20 @@ final class ComponentList implements ComponentCollection
     public function valid()
     {
         return isset($this->config[$this->position]);
+    }
+
+    public function consoleCommands(): iterable
+    {
+        return $this->consoleCommands;
+    }
+
+    /**
+     * @param Command ...$consoleCommands
+     */
+    public function addConsoleCommands(Command ...$consoleCommands): void
+    {
+        foreach ($consoleCommands as $consoleCommand) {
+            $this->consoleCommands[] = $consoleCommand;
+        }
     }
 }

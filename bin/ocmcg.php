@@ -90,12 +90,14 @@ if ($config) {
 
 $helperSet->set(new Console\Config($resolver), Config::class);
 
-$application->addCommands(
-    [
-        new Console\WorkflowCommand(),
-    ]
+$configClass = $helperSet->get(Config::class)->resolver()->resolve(
+    $helperSet->get(Console\WorkflowContext::class)->context()
 );
+$consoleCommands = $configClass->consoleCommands();
+$consoleCommands[] = new Console\WorkflowCommand();
 
-unset($workflowContext, $config, $argvInput);
+$application->addCommands($consoleCommands);
+
+unset($workflowContext, $config, $configClass, $argvInput);
 
 $application->run();
