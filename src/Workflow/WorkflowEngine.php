@@ -10,13 +10,18 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
+/**
+ * The class `WorkflowEngine` processes a list of classes in a specified order which implement the `Description`
+ * interface. The processing is started by the `run()` method.
+ */
 final class WorkflowEngine
 {
     /**
-     * Iterates over given component descriptions and
+     * Processes a list of classes in a specified order which implement the `Description`
+     * interface.
      *
-     * @param WorkflowContext $context
-     * @param Description ...$descriptions
+     * @param WorkflowContext $context Stores input / output data of the components
+     * @param Description ...$descriptions Component descriptions
      */
     public function run(WorkflowContext $context, Description ...$descriptions): void
     {

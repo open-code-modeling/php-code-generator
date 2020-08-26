@@ -13,6 +13,8 @@ namespace OpenCodeModeling\CodeGenerator\Console;
 use OpenCodeModeling\CodeGenerator\Config\Component;
 use OpenCodeModeling\CodeGenerator\Config\ComponentCollection;
 use OpenCodeModeling\CodeGenerator\Config\Config;
+use OpenCodeModeling\CodeGenerator\Config\WorkflowCollection;
+use OpenCodeModeling\CodeGenerator\Config\WorkflowConfig;
 use OpenCodeModeling\CodeGenerator\Exception\RuntimeException;
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext;
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowEngine;
@@ -20,6 +22,9 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * CLI command to start code generation
+ */
 final class WorkflowCommand extends Command
 {
     protected function configure()
@@ -36,15 +41,19 @@ final class WorkflowCommand extends Command
 
         $config = $this->loadConfig($workflowContext);
 
-        if ($config instanceof Component) {
+        if ($config instanceof WorkflowConfig
+            || $config instanceof Component
+        ) {
             $this->executeWorkflow($config, $workflowContext);
-        } elseif ($config instanceof ComponentCollection) {
-            foreach ($config as $componentConfig) {
-                $this->executeWorkflow($componentConfig, $workflowContext);
+        } elseif ($config instanceof WorkflowCollection
+            || $config instanceof ComponentCollection
+        ) {
+            foreach ($config as $workflowConfig) {
+                $this->executeWorkflow($workflowConfig, $workflowContext);
             }
         } else {
             throw new RuntimeException(
-                \sprintf('$config must implement %s or %s', Component::class, ComponentCollection::class)
+                \sprintf('$config must implement %s or %s', WorkflowConfig::class, WorkflowCollection::class)
             );
         }
 
@@ -56,7 +65,11 @@ final class WorkflowCommand extends Command
         return $this->getHelper(\OpenCodeModeling\CodeGenerator\Console\Config::class)->resolver()->resolve($workflowContext);
     }
 
-    private function executeWorkflow(Component $config, WorkflowContext $workflowContext): void
+    /**
+     * @param WorkflowConfig|Component $config
+     * @param WorkflowContext $workflowContext
+     */
+    private function executeWorkflow($config, WorkflowContext $workflowContext): void
     {
         $workflowEngine = new WorkflowEngine();
         $workflowEngine->run($workflowContext, ...$config->componentDescriptions());

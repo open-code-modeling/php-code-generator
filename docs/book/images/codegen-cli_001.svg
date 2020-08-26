@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 1739 373" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="359.2656" style="stroke: #000000; stroke-width: 1.0;" width="1725" x="3" y="3"/><path d="M1317,3 L1317,12.2969 L1307,22.2969 L3,22.2969 " fill="none" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16" x="6" y="16.9951">sd</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="1280" x="30" y="16.9951">Execute workflow (config: OpenCodeModeling::CodeGenerator::Config::Component, workflowContext: OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext): void</text><rect fill="#DDDDDD" height="224.0781" style="stroke: #383838; stroke-width: 1.0;" width="10" x="187" y="109.1875"/><rect fill="#DDDDDD" height="30.2969" style="stroke: #383838; stroke-width: 1.0;" width="10" x="1027" y="139.4844"/><rect fill="#DDDDDD" height="61.5938" style="stroke: #383838; stroke-width: 1.0;" width="10" x="1479" y="257.6719"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="192" x2="192" y1="76.8906" y2="351.2656"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="576" x2="576" y1="76.8906" y2="351.2656"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1032" x2="1032" y1="76.8906" y2="351.2656"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1484" x2="1484" y1="216.5781" y2="351.2656"/><rect fill="#F8F8F8" height="30.2969" style="stroke: #383838; stroke-width: 1.5;" width="270" x="57" y="45.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="256" x="64" y="65.5889">workflowCommand: WorkflowCommand</text><rect fill="#F8F8F8" height="46.5938" style="stroke: #383838; stroke-width: 1.5;" width="478" x="337" y="29.2969"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="128" x="508" y="49.292">workflowContext:</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="464" x="344" y="65.5889">OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext</text><rect fill="#F8F8F8" height="46.5938" style="stroke: #383838; stroke-width: 1.5;" width="414" x="825" y="29.2969"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="1000" y="49.292">config:</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="400" x="832" y="65.5889">OpenCodeModeling::CodeGenerator::Config::Component</text><rect fill="#DDDDDD" height="224.0781" style="stroke: #383838; stroke-width: 1.0;" width="10" x="187" y="109.1875"/><rect fill="#DDDDDD" height="30.2969" style="stroke: #383838; stroke-width: 1.0;" width="10" x="1027" y="139.4844"/><rect fill="#DDDDDD" height="61.5938" style="stroke: #383838; stroke-width: 1.0;" width="10" x="1479" y="257.6719"/><polygon fill="#383838" points="175,105.1875,185,109.1875,175,113.1875,179,109.1875" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="8" x2="181" y1="109.1875" y2="109.1875"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="15" y="103.8857">executeWorkflow(...)</text><polygon fill="#383838" points="1015,135.4844,1025,139.4844,1015,143.4844,1019,139.4844" style="stroke: #383838; stroke-width: 1.0;"/><line style="stroke: #383838; stroke-width: 1.0;" x1="197" x2="1021" y1="139.4844" y2="139.4844"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="204" y="134.1826">componentDescriptions()</text><line style="stroke: #383838; stroke-width: 1.0;" x1="197" x2="207" y1="169.7813" y2="165.7813"/><line style="stroke: #383838; stroke-width: 1.0;" x1="197" x2="207" y1="169.7813" y2="173.7813"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="197" x2="1031" y1="169.7813" y2="169.7813"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="592" x="214" y="164.4795">descriptions: OpenCodeModeling::CodeGenerator::Workflow::Description[1..*]</text><line style="stroke: #383838; stroke-width: 1.0;" x1="1247" x2="1237" y1="200.0781" y2="196.0781"/><line style="stroke: #383838; stroke-width: 1.0;" x1="1247" x2="1237" y1="200.0781" y2="204.0781"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="197" x2="1248" y1="200.0781" y2="200.0781"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="204" y="194.7764">&lt;&lt;create&gt;&gt;</text><rect fill="#F8F8F8" height="46.5938" style="stroke: #383838; stroke-width: 1.5;" width="470" x="1249" y="177.7813"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="1424" y="197.7764">workflowEngine:</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="456" x="1256" y="214.0732">OpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine</text><line style="stroke: #383838; stroke-width: 1.0;" x1="1477" x2="1467" y1="257.6719" y2="253.6719"/><line style="stroke: #383838; stroke-width: 1.0;" x1="1477" x2="1467" y1="257.6719" y2="261.6719"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="197" x2="1478" y1="257.6719" y2="257.6719"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="272" x="204" y="252.3701">run(workflowContext, descriptions)</text><rect fill="#FFFFFF" height="42.5938" style="stroke: #000000; stroke-width: 2.0;" width="476" x="1246" y="265.6719"/><polygon fill="#EEEEEE" points="1246,265.6719,1315,265.6719,1315,273.6719,1305,283.6719,1246,283.6719,1246,265.6719" style="stroke: #000000; stroke-width: 2.0;"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="24" x="1259" y="280.667">ref</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="152" x="1408" y="300.667">Run workflow engine</text><line style="stroke: #383838; stroke-width: 1.0;" x1="197" x2="207" y1="319.2656" y2="315.2656"/><line style="stroke: #383838; stroke-width: 1.0;" x1="197" x2="207" y1="319.2656" y2="323.2656"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="197" x2="1483" y1="319.2656" y2="319.2656"/><line style="stroke: #383838; stroke-width: 1.0;" x1="8" x2="18" y1="333.2656" y2="329.2656"/><line style="stroke: #383838; stroke-width: 1.0;" x1="8" x2="18" y1="333.2656" y2="337.2656"/><line style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="8" x2="191" y1="333.2656" y2="333.2656"/><!--MD5=[22945ba6c42d5dcbfcf438158907b7a8]
+@startuml
+!include ../style.iuml
+
+mainframe **sd** Execute workflow (config: OpenCodeModeling::CodeGenerator::Config::Component, workflowContext: OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext): void
+
+-> "workflowCommand: WorkflowCommand": executeWorkflow(...)
+
+activate "workflowCommand: WorkflowCommand"
+participant "workflowContext: \nOpenCodeModeling::CodeGenerator::Workflow::WorkflowContext"
+    "workflowCommand: WorkflowCommand" -> "config: \nOpenCodeModeling::CodeGenerator::Config::Component" ++: componentDescriptions()
+    "workflowCommand: WorkflowCommand" <<- - "config: \nOpenCodeModeling::CodeGenerator::Config::Component" - -: descriptions: OpenCodeModeling::CodeGenerator::Workflow::Description[1..*]
+
+    create "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine"
+    "workflowCommand: WorkflowCommand" - ->> "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine":  <<create>>
+
+      "workflowCommand: WorkflowCommand" - ->> "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine" ++: run(workflowContext, descriptions)
+      ref over "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine":  Run workflow engine
+      "workflowCommand: WorkflowCommand" <<- - "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine" - -
+
+  <<- - "workflowCommand: WorkflowCommand"
+deactivate "workflowCommand: WorkflowCommand"
+
+@enduml
+
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam DefaultFontName "DejaVu Sans Mono"
+skinparam DefaultFontSize 14
+skinparam ClassFontStyle bold
+hide empty fields
+hide empty methods
+hide circle
+
+skinparam pageMargin 0
+scale 1
+skinparam svgDimensionStyle false
+skinparam nodesep 10
+skinparam ranksep 20
+
+hide footbox
+
+skinparam sequence {
+    LifeLineBackgroundColor #DDD
+}
+
+mainframe **sd** Execute workflow (config: OpenCodeModeling::CodeGenerator::Config::Component, workflowContext: OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext): void
+
+-> "workflowCommand: WorkflowCommand": executeWorkflow(...)
+
+activate "workflowCommand: WorkflowCommand"
+participant "workflowContext: \nOpenCodeModeling::CodeGenerator::Workflow::WorkflowContext"
+    "workflowCommand: WorkflowCommand" -> "config: \nOpenCodeModeling::CodeGenerator::Config::Component" ++: componentDescriptions()
+    "workflowCommand: WorkflowCommand" <<- - "config: \nOpenCodeModeling::CodeGenerator::Config::Component" - -: descriptions: OpenCodeModeling::CodeGenerator::Workflow::Description[1..*]
+
+    create "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine"
+    "workflowCommand: WorkflowCommand" - ->> "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine":  <<create>>
+
+      "workflowCommand: WorkflowCommand" - ->> "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine" ++: run(workflowContext, descriptions)
+      ref over "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine":  Run workflow engine
+      "workflowCommand: WorkflowCommand" <<- - "workflowEngine:\nOpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine" - -
+
+  <<- - "workflowCommand: WorkflowCommand"
+deactivate "workflowCommand: WorkflowCommand"
+
+@enduml
+
+PlantUML version 1.2020.16(Sun Aug 23 22:20:43 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

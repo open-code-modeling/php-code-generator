@@ -10,17 +10,9 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
-use OpenCodeModeling\CodeGenerator\Workflow\Description;
-
 /**
- * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\WorkflowConfig
+ * Several workflows can be combined via this interface. Console commands from provided workflows must be added.
  */
-interface Component extends Config
+interface WorkflowCollection extends Config, \Iterator
 {
-    /**
-     * Returns the component descriptions.
-     *
-     * @return Description[]
-     */
-    public function componentDescriptions(): array;
 }

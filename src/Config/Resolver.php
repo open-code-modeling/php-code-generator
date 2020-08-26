@@ -12,7 +12,16 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext;
 
+/**
+ * Read the configuration from different sources
+ */
 interface Resolver
 {
+    /**
+     * Returns the configuration for code generation
+     *
+     * @param WorkflowContext $workflowContext Can be used by the respective configuration to provide necessary data for starting the code generation
+     * @return Config
+     */
     public function resolve(WorkflowContext $workflowContext): Config;
 }

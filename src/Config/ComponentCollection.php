@@ -10,6 +10,9 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
+/**
+ * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\WorkflowCollection
+ */
 interface ComponentCollection extends Config, \Iterator
 {
 }

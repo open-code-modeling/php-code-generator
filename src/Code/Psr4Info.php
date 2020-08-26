@@ -182,10 +182,12 @@ final class Psr4Info implements ClassInfo
     }
 
     /**
-     * @param ClassLoader $classLoader
+     * Creates an instance of the class Psr4Info based on the Composer configuration.
+     *
+     * @param ClassLoader $classLoader Composer ClassLoader instance
      * @param callable $filterDirectoryToNamespace Callable to filter a directory to a namespace
-     * @param callable $filterNamespaceToDirectory
-     * @param string $exclude
+     * @param callable $filterNamespaceToDirectory  Callable to filter a namespace to a directory
+     * @param string $exclude Specifies which path should be ignored
      * @return array
      */
     public static function fromComposer(

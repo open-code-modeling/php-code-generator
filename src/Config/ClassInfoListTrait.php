@@ -12,6 +12,10 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 
 use OpenCodeModeling\CodeGenerator\Code\ClassInfoList;
 
+/**
+ * Helper class for configuration of \OpenCodeModeling\CodeGenerator\Code\ClassInfoList. Can be used in cartridge
+ * configuration.
+ */
 trait ClassInfoListTrait
 {
     /**

@@ -12,6 +12,9 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext;
 
+/**
+ * A standard implementation of the \OpenCodeModeling\CodeGenerator\Config\Resolver interface
+ */
 final class FilePhpResolver implements Resolver
 {
     /**
@@ -24,6 +27,9 @@ final class FilePhpResolver implements Resolver
      */
     private $resolved;
 
+    /**
+     * @param string $file The path to the configuration file
+     */
     public function __construct(string $file)
     {
         $this->file = $file;

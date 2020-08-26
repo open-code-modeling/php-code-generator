@@ -13,6 +13,9 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 use OpenCodeModeling\CodeGenerator\Workflow\Description;
 use Symfony\Component\Console\Command\Command;
 
+/**
+ * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\Workflow
+ */
 final class ArrayConfig implements Component
 {
     /**
@@ -41,6 +44,8 @@ final class ArrayConfig implements Component
     }
 
     /**
+     * Add console commands which are added to the code generator CLI
+     *
      * @param Command ...$consoleCommands
      */
     public function addConsoleCommands(Command ...$consoleCommands): void

@@ -13,14 +13,14 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 use Symfony\Component\Console\Command\Command;
 
 /**
- * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\WorkflowList
+ * A standard implementation of the interface \OpenCodeModeling\CodeGenerator\Config\WorkflowCollection
  */
-final class ComponentList implements ComponentCollection
+final class WorkflowList implements WorkflowCollection
 {
     private $position = 0;
 
     /**
-     * @var Component[]
+     * @var WorkflowConfig[]
      **/
     private $components;
 
@@ -29,7 +29,7 @@ final class ComponentList implements ComponentCollection
      **/
     private $consoleCommands = [];
 
-    public function __construct(Component ...$components)
+    public function __construct(WorkflowConfig ...$components)
     {
         $this->components = $components;
 

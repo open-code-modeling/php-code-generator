@@ -1,0 +1,23 @@
+{
+    "title": "PHP Code Generator",
+    "content": [
+        {"intro": "README.md"},
+        {"changelog": "CHANGELOG.md"},
+        {"generator": "docs/book/generator/bookdown.json"}
+    ],
+    "theme": {
+        "toc": {
+            "collapsibleFromLevel": 2
+        }
+    },
+    "template": "bookdown/themes",
+    "tocDepth": 2,
+    "target": "./docs/html",
+    "numbering": false,
+    "extensions": {
+        "commonmark": [
+            "Webuni\\CommonMark\\TableExtension\\TableExtension",
+            "Webuni\\CommonMark\\AttributesExtension\\AttributesExtension"
+        ]
+    }
+}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 1084 681" zoomAndPan="magnify"><defs/><g><!--MD5=[fccb09b67c40a993a37c6c9c7014380a]
+cluster OpenCodeModeling::CodeGenerator::Workflow--><polygon fill="#FFFFFF" points="16,6,350,6,357,28.2969,1062,28.2969,1062,588,16,588,16,6" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="16" x2="357" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="328" x="20" y="20.9951">OpenCodeModeling::CodeGenerator::Workflow</text><!--MD5=[403a60245f2220438867a484824a6703]
+class OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot--><rect codeLine="7" fill="#F8F8F8" height="66.8906" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot" style="stroke: #383838; stroke-width: 1.5;" width="206" x="501" y="353"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="88" x="560" y="370.9951">«interface»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="200" x="504" y="387.292">DescriptionWithOutputSlot</text><line style="stroke: #383838; stroke-width: 1.5;" x1="502" x2="706" y1="395.5938" y2="395.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="507" y="412.5889">+ outputSlot(): String</text><!--MD5=[77855bf6f519a27335197a2fd3f59cf4]
+class OpenCodeModeling::CodeGenerator::Workflow::Description--><rect codeLine="10" fill="#F8F8F8" height="66.8906" id="OpenCodeModeling::CodeGenerator::Workflow::Description" style="stroke: #383838; stroke-width: 1.5;" width="196" x="621" y="472.5"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="88" x="675" y="490.4951">«interface»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="88" x="675" y="506.792">Description</text><line style="stroke: #383838; stroke-width: 1.5;" x1="622" x2="816" y1="515.0938" y2="515.0938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="627" y="532.0889">+ component(): callable</text><!--MD5=[b78613c7bb2351419616142a337d1da8]
+class OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot--><rect codeLine="13" fill="#F8F8F8" height="132.0781" id="OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot" style="stroke: #383838; stroke-width: 1.5;" width="260" x="474" y="189"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="576" y="206.9951">«class»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="224" x="492" y="223.292">ComponentDescriptionWithSlot</text><line style="stroke: #383838; stroke-width: 1.5;" x1="475" x2="733" y1="231.5938" y2="231.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="248" x="480" y="248.5889">+ ComponentDescriptionWithSlot(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="512" y="264.8857">component: callable,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="152" x="512" y="281.1826">outputSlot: String,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="512" y="297.4795">inputSlots: String[1..*]</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="496" y="313.7764">)</text><!--MD5=[ef1509bfbfe4705ae76afe96def86cd7]
+class OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly--><rect codeLine="16" fill="#F8F8F8" height="115.7813" id="OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly" style="stroke: #383838; stroke-width: 1.5;" width="302" x="744" y="197"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="867" y="214.9951">«class»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="296" x="747" y="231.292">ComponentDescriptionWithInputSlotOnly</text><line style="stroke: #383838; stroke-width: 1.5;" x1="745" x2="1045" y1="239.5938" y2="239.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="248" x="750" y="256.5889">+ ComponentDescriptionWithSlot(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="782" y="272.8857">component: callable,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="782" y="289.1826">inputSlots: String[1..*]</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="766" y="305.4795">)</text><!--MD5=[2cfc7ac3fceb31a947cbc93e21f4cab9]
+class OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot--><rect codeLine="19" fill="#F8F8F8" height="66.8906" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot" style="stroke: #383838; stroke-width: 1.5;" width="236" x="717" y="353"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="88" x="791" y="370.9951">«interface»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="192" x="739" y="387.292">DescriptionWithInputSlot</text><line style="stroke: #383838; stroke-width: 1.5;" x1="718" x2="952" y1="395.5938" y2="395.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="224" x="723" y="412.5889">+ inputSlots(): String[1..*]</text><!--MD5=[d5518499dc3b0944ea786c3ffd5962f8]
+class OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait--><rect codeLine="22" fill="#F8F8F8" height="91.1875" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait" style="stroke: #383838; stroke-width: 1.5;" width="196" x="850" y="53.5"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="920" y="71.4951">«trait»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="128" x="884" y="87.792">DescriptionTrait</text><line style="stroke: #383838; stroke-width: 1.5;" x1="851" x2="1045" y1="96.0938" y2="96.0938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="168" x="856" y="113.0889">- component: callable</text><line style="stroke: #383838; stroke-width: 1.0;" x1="851" x2="1045" y1="120.3906" y2="120.3906"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="856" y="137.3857">+ component(): callable</text><!--MD5=[0cf5f97e9d2c79802a6193c0ab0d6b20]
+class OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait--><rect codeLine="27" fill="#F8F8F8" height="91.1875" id="OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait" style="stroke: #383838; stroke-width: 1.5;" width="236" x="604" y="53.5"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="694" y="71.4951">«trait»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="112" x="666" y="87.792">InputSlotTrait</text><line style="stroke: #383838; stroke-width: 1.5;" x1="605" x2="839" y1="96.0938" y2="96.0938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="208" x="610" y="113.0889">- inputSlots: String[1..*]</text><line style="stroke: #383838; stroke-width: 1.0;" x1="605" x2="839" y1="120.3906" y2="120.3906"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="224" x="610" y="137.3857">+ inputSlots(): String[1..*]</text><!--MD5=[fd37a58724e905357d60bf1c07fbc12b]
+class OpenCodeModeling::CodeGenerator::Workflow::OutputSlotTrait--><rect codeLine="32" fill="#F8F8F8" height="91.1875" id="OpenCodeModeling::CodeGenerator::Workflow::OutputSlotTrait" style="stroke: #383838; stroke-width: 1.5;" width="188" x="406" y="53.5"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="472" y="71.4951">«trait»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="120" x="440" y="87.792">OutputSlotTrait</text><line style="stroke: #383838; stroke-width: 1.5;" x1="407" x2="593" y1="96.0938" y2="96.0938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="412" y="113.0889">- outputSlot: String</text><line style="stroke: #383838; stroke-width: 1.0;" x1="407" x2="593" y1="120.3906" y2="120.3906"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="412" y="137.3857">+ outputSlot(): String</text><!--MD5=[05c63825051eca4b95848d8aa8f8925b]
+class OpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine--><rect codeLine="38" fill="#F8F8F8" height="115.7813" id="OpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine" style="stroke: #383838; stroke-width: 1.5;" width="364" x="32" y="41"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="186" y="58.9951">«class»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="112" x="158" y="75.292">WorkflowEngine</text><line style="stroke: #383838; stroke-width: 1.5;" x1="33" x2="395" y1="83.5938" y2="83.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="38" y="100.5889">+ run(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="200" x="70" y="116.8857">context: WorkflowContext,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="320" x="70" y="133.1826">componentDescriptions: Description[1..*]</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="54" y="149.4795">): void</text><!--MD5=[b1bbda2a2007d4c0dbf4768e443aec5e]
+class OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap--><rect codeLine="42" fill="#F8F8F8" height="156.375" id="OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap" style="stroke: #383838; stroke-width: 1.5;" width="388" x="32" y="177"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="198" y="194.9951">«class»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="144" x="154" y="211.292">WorkflowContextMap</text><line style="stroke: #383838; stroke-width: 1.5;" x1="33" x2="419" y1="219.5938" y2="219.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="38" y="236.5889">- map: array</text><line style="stroke: #383838; stroke-width: 1.0;" x1="33" x2="419" y1="243.8906" y2="243.8906"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="240" x="38" y="260.8857">+ get(slotName: String): mixed</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="376" x="38" y="277.1826">+ put(slotName: String, slotValue: mixed): void</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="152" x="38" y="293.4795">+ getByDescription(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="296" x="70" y="309.7764">description: DescriptionWithInputSlot</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="64" x="54" y="326.0732">): array</text><!--MD5=[11b71d66c66c97f1e70caf334ebca146]
+class OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext--><rect codeLine="49" fill="#F8F8F8" height="132.0781" id="OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext" style="stroke: #383838; stroke-width: 1.5;" width="388" x="32" y="440"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="88" x="182" y="457.9951">«interface»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="120" x="166" y="474.292">WorkflowContext</text><line style="stroke: #383838; stroke-width: 1.5;" x1="33" x2="419" y1="482.5938" y2="482.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="240" x="38" y="499.5889">+ get(slotName: String): mixed</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="152" x="38" y="515.8857">+ getByDescription(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="296" x="70" y="532.1826">description: DescriptionWithInputSlot</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="64" x="54" y="548.4795">): array</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="376" x="38" y="564.7764">+ put(slotName: String, slotValue: mixed): void</text><!--MD5=[be6125f66888df7d1037248ef16256fb]
+class callable--><rect codeLine="4" fill="#F8F8F8" height="42.5938" id="callable" style="stroke: #383838; stroke-width: 1.5;" width="82" x="770" y="628"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="771" y="645.9951">«dataType»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="64" x="779" y="662.292">callable</text><!--MD5=[3b90d4f689f5558e726f911ef00440d8]
+class mixed--><rect codeLine="4" fill="#F8F8F8" height="42.5938" id="mixed" style="stroke: #383838; stroke-width: 1.5;" width="82" x="678" y="628"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="679" y="645.9951">«dataType»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="40" x="699" y="662.292">mixed</text><!--MD5=[e80ffa2c9cb53a873d0ca7d192a0f32b]
+class array--><rect codeLine="4" fill="#F8F8F8" height="42.5938" id="array" style="stroke: #383838; stroke-width: 1.5;" width="82" x="586" y="628"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="587" y="645.9951">«dataType»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="40" x="607" y="662.292">array</text><!--MD5=[433151db3badeb731a1c0ad4635f3cbf]
+link OpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine to OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap--><!--MD5=[202e4bdf15d36469dbbe8316e391573d]
+link OpenCodeModeling::CodeGenerator::Workflow::Description to mixed--><!--MD5=[b38e83880c747ffc04a30388afe45422]
+link OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap to OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext--><path codeLine="69" d="M226,333.08 C226,360.42 226,391.34 226,419.34 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap-to-OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext" style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="233,419.61,226,439.61,219,419.61,233,419.61" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[a9c021fb03ea15590448f3e9a8ca595e]
+link OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot to OpenCodeModeling::CodeGenerator::Workflow::Description--><path codeLine="70" d="M636.03,420.23 C647.5,431.94 660.66,445.39 673.06,458.06 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot-to-OpenCodeModeling::CodeGenerator::Workflow::Description" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="678.15,453.26,687.14,472.45,668.15,463.05,678.15,453.26" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[418fef432f08319ff185746b2c4a1510]
+reverse link OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait to OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot--><path codeLine="72" d="M855.41,152.97 C851.93,154.4 848.45,155.75 845,157 C799.9,173.26 784,160.45 739,177 C729.63,180.45 720.15,184.5 710.78,188.93 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait-backto-OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="852.82,146.46,873.93,144.59,858.59,159.21,852.82,146.46" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[0a493d39fc66c7a4011f62afaf13b8bf]
+reverse link OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait to OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot--><path codeLine="73" d="M675.46,160.73 C668.37,170 661.02,179.59 653.86,188.93 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait-backto-OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="670.15,156.16,687.87,144.54,681.26,164.68,670.15,156.16" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[4690d82a69e29f786108c8eba6033b23]
+reverse link OpenCodeModeling::CodeGenerator::Workflow::OutputSlotTrait to OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot--><path codeLine="74" d="M541.48,161.43 C547.59,170.47 553.9,179.82 560.06,188.93 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::OutputSlotTrait-backto-OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="535.47,165.04,530.08,144.54,547.08,157.2,535.47,165.04" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[4b945e648c540a19bcedfa5255214ebb]
+link OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot to OpenCodeModeling::CodeGenerator::Workflow::Description--><path codeLine="76" d="M802.69,420.23 C791.12,431.94 777.85,445.39 765.34,458.06 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot-to-OpenCodeModeling::CodeGenerator::Workflow::Description" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="770.17,463.13,751.14,472.45,760.21,453.29,770.17,463.13" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[147b145e18f8a3dc2300f88bdde663f4]
+link OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot to OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot--><path codeLine="78" d="M717.72,321.05 C724.91,325.11 732.05,329.12 739,333 C744.99,336.34 751.19,339.79 757.44,343.24 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot-to-OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot" style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="760.85,337.12,774.99,352.9,754.1,349.39,760.85,337.12" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[7642a09831fcaa66437b9e8811d11c08]
+link OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot to OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot--><path codeLine="79" d="M604,321.13 C604,324.98 604,328.83 604,332.63 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot-to-OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot" style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="611,332.71,604,352.71,597,332.71,611,332.71" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[518ea8b1e7443e58dfb686dca045fea6]
+reverse link OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait to OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly--><path codeLine="81" d="M926.06,163.74 C922.28,174.74 918.37,186.11 914.65,196.92 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait-backto-OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="919.54,161.18,932.67,144.54,932.78,165.73,919.54,161.18" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[89d10aa17ca326997408385d3f3cd5e7]
+reverse link OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait to OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly--><path codeLine="82" d="M787.16,158 C801.47,170.74 816.61,184.22 830.87,196.92 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait-backto-OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="none" points="782.32,163.07,772.04,144.54,791.63,152.61,782.32,163.07" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[985558cb7202c81a8395923e637918a6]
+link OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly to OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot--><path codeLine="83" d="M868.51,313.18 C865.22,320.27 861.88,327.49 858.64,334.48 " fill="none" id="OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly-to-OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot" style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="864.93,337.55,850.17,352.76,852.23,331.67,864.93,337.55" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[db98389e8a4e827a526c396205597c0b]
+@startuml
+!include ../style.iuml
+set namespaceSeparator ::
+
+namespace OpenCodeModeling::CodeGenerator::Workflow  {
+
+
+	interface DescriptionWithOutputSlot << interface >> {
+		+ outputSlot(): String
+	}
+	interface Description << interface >> {
+		+ component(): callable
+	}
+	class ComponentDescriptionWithSlot << class >> {
+		+ ComponentDescriptionWithSlot(\n    component: callable,\n    outputSlot: String,\n    inputSlots: String[1..*]\n  )
+	}
+	class ComponentDescriptionWithInputSlotOnly << class >> {
+		+ ComponentDescriptionWithSlot(\n    component: callable,\n    inputSlots: String[1..*]\n  )
+	}
+	interface DescriptionWithInputSlot << interface >> {
+		+ inputSlots(): String[1..*]
+	}
+	class DescriptionTrait << trait >> {
+		- component: callable
+		- -
+		+ component(): callable
+	}
+	class InputSlotTrait << trait >> {
+		- inputSlots: String[1..*]
+		- -
+		+ inputSlots(): String[1..*]
+	}
+	class OutputSlotTrait << trait >> {
+		- outputSlot: String
+		- -
+		+ outputSlot(): String
+	}
+
+	class WorkflowEngine << class >> {
+		+ run(\n    context: WorkflowContext,\n    componentDescriptions: Description[1..*]\n  ): void
+	}
+
+	class WorkflowContextMap << class >> {
+		- map: array
+		- -
+		+ get(slotName: String): mixed
+		+ put(slotName: String, slotValue: mixed): void
+		+ getByDescription(\n    description: DescriptionWithInputSlot\n  ): array
+	}
+	interface WorkflowContext << interface >> {
+		+ get(slotName: String): mixed
+		+ getByDescription(\n    description: DescriptionWithInputSlot\n  ): array
+		+ put(slotName: String, slotValue: mixed): void
+	}
+
+  WorkflowEngine -[hidden]-> WorkflowContextMap
+}
+
+together {
+  !include ../callable.puml
+  !include ../mixed.puml
+  !include ../array.puml
+}
+
+'OpenCodeModeling::CodeGenerator::Workflow::Description -[hidden]-> array
+OpenCodeModeling::CodeGenerator::Workflow::Description -[hidden]-> mixed
+
+'"OpenCodeModeling::CodeGenerator::Workflow::WorkflowEngine" "1..*" o- - "\n1" "OpenCodeModeling::CodeGenerator::Workflow::Description": "  componentDescriptions                 "
+
+OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap ...|> OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot - -|> OpenCodeModeling::CodeGenerator::Workflow::Description
+
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot
+OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot
+OpenCodeModeling::CodeGenerator::Workflow::OutputSlotTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot
+
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot - -|> OpenCodeModeling::CodeGenerator::Workflow::Description
+
+OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot ..|> OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot
+OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot ..|> OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot
+
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly
+OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly
+OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly ..|> OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot
+
+@enduml
+
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam DefaultFontName "DejaVu Sans Mono"
+skinparam DefaultFontSize 14
+skinparam ClassFontStyle bold
+hide empty fields
+hide empty methods
+hide circle
+
+skinparam pageMargin 0
+scale 1
+skinparam svgDimensionStyle false
+skinparam nodesep 10
+skinparam ranksep 20
+
+hide footbox
+
+skinparam sequence {
+    LifeLineBackgroundColor #DDD
+}
+set namespaceSeparator ::
+
+namespace OpenCodeModeling::CodeGenerator::Workflow  {
+
+
+	interface DescriptionWithOutputSlot << interface >> {
+		+ outputSlot(): String
+	}
+	interface Description << interface >> {
+		+ component(): callable
+	}
+	class ComponentDescriptionWithSlot << class >> {
+		+ ComponentDescriptionWithSlot(\n    component: callable,\n    outputSlot: String,\n    inputSlots: String[1..*]\n  )
+	}
+	class ComponentDescriptionWithInputSlotOnly << class >> {
+		+ ComponentDescriptionWithSlot(\n    component: callable,\n    inputSlots: String[1..*]\n  )
+	}
+	interface DescriptionWithInputSlot << interface >> {
+		+ inputSlots(): String[1..*]
+	}
+	class DescriptionTrait << trait >> {
+		- component: callable
+		- -
+		+ component(): callable
+	}
+	class InputSlotTrait << trait >> {
+		- inputSlots: String[1..*]
+		- -
+		+ inputSlots(): String[1..*]
+	}
+	class OutputSlotTrait << trait >> {
+		- outputSlot: String
+		- -
+		+ outputSlot(): String
+	}
+
+	class WorkflowEngine << class >> {
+		+ run(\n    context: WorkflowContext,\n    componentDescriptions: Description[1..*]\n  ): void
+	}
+
+	class WorkflowContextMap << class >> {
+		- map: array
+		- -
+		+ get(slotName: String): mixed
+		+ put(slotName: String, slotValue: mixed): void
+		+ getByDescription(\n    description: DescriptionWithInputSlot\n  ): array
+	}
+	interface WorkflowContext << interface >> {
+		+ get(slotName: String): mixed
+		+ getByDescription(\n    description: DescriptionWithInputSlot\n  ): array
+		+ put(slotName: String, slotValue: mixed): void
+	}
+
+  WorkflowEngine -[hidden]-> WorkflowContextMap
+}
+
+together {
+skinparam dpi 192
+
+	class callable << dataType >> {
+	}
+skinparam dpi 192
+
+	class mixed << dataType >> {
+	}
+skinparam dpi 192
+
+	class array << dataType >> {
+	}
+}
+
+OpenCodeModeling::CodeGenerator::Workflow::Description -[hidden]-> mixed
+
+
+OpenCodeModeling::CodeGenerator::Workflow::WorkflowContextMap ...|> OpenCodeModeling::CodeGenerator::Workflow::WorkflowContext
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot - -|> OpenCodeModeling::CodeGenerator::Workflow::Description
+
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot
+OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot
+OpenCodeModeling::CodeGenerator::Workflow::OutputSlotTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot
+
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot - -|> OpenCodeModeling::CodeGenerator::Workflow::Description
+
+OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot ..|> OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot
+OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithSlot ..|> OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithOutputSlot
+
+OpenCodeModeling::CodeGenerator::Workflow::DescriptionTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly
+OpenCodeModeling::CodeGenerator::Workflow::InputSlotTrait <|- - OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly
+OpenCodeModeling::CodeGenerator::Workflow::ComponentDescriptionWithInputSlotOnly ..|> OpenCodeModeling::CodeGenerator::Workflow::DescriptionWithInputSlot
+
+@enduml
+
+PlantUML version 1.2020.16(Sun Aug 23 22:20:43 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
