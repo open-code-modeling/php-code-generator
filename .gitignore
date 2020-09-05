@@ -6,3 +6,4 @@ vendor/
 composer.lock
 .idea
 .php_cs.cache
+docs/html

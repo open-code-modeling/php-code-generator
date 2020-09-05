@@ -12,10 +12,13 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext;
 
+/**
+ * Empty configuration implementation
+ */
 final class EmptyResolver implements Resolver
 {
     public function resolve(WorkflowContext $workflowContext): Config
     {
-        return new ArrayConfig();
+        return new Workflow();
     }
 }

@@ -12,6 +12,9 @@ namespace OpenCodeModeling\CodeGenerator\Console;
 
 use OpenCodeModeling\CodeGenerator\Config\Resolver;
 
+/**
+ * Resolves configuration
+ */
 final class Config extends AbstractHelper
 {
     /**

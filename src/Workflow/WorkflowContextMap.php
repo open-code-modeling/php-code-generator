@@ -13,6 +13,11 @@ namespace OpenCodeModeling\CodeGenerator\Workflow;
 use OpenCodeModeling\CodeGenerator\Exception\MissingSlotName;
 use OpenCodeModeling\CodeGenerator\Exception\WrongSlotType;
 
+/**
+ * A standard implementation of the `WorkflowContext` interface
+ *
+ * @see \OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext
+ */
 final class WorkflowContextMap implements WorkflowContext
 {
     /**
@@ -69,9 +74,6 @@ final class WorkflowContextMap implements WorkflowContext
         }
     }
 
-    /**
-     * @return string[]
-     */
     public function getSlotNames(): array
     {
         return \array_keys($this->map);

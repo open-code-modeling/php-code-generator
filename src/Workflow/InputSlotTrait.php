@@ -10,6 +10,9 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
+/**
+ * Implementation of \OpenCodeModeling\CodeGenerator\Workflow\DescriptionWithInputSlot
+ */
 trait InputSlotTrait
 {
     /**
@@ -17,6 +20,11 @@ trait InputSlotTrait
      */
     private $inputSlots;
 
+    /**
+     * Returns an ordered list of slot names for the required input data of the component
+     *
+     * @return array
+     */
     public function inputSlots(): array
     {
         return $this->inputSlots;

@@ -13,9 +13,9 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 use OpenCodeModeling\CodeGenerator\Workflow\Description;
 
 /**
- * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\WorkflowConfig
+ * Configuration for a workflow. A workflow can consists of multiple descriptions.
  */
-interface Component extends Config
+interface WorkflowConfig extends Config
 {
     /**
      * Returns the component descriptions.

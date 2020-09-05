@@ -10,57 +10,32 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
+use OpenCodeModeling\CodeGenerator\Workflow\Description;
 use Symfony\Component\Console\Command\Command;
 
 /**
- * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\WorkflowList
+ * A standard implementation of the \OpenCodeModeling\CodeGenerator\Config\WorkflowConfig interface
  */
-final class ComponentList implements ComponentCollection
+final class Workflow implements WorkflowConfig
 {
-    private $position = 0;
-
     /**
-     * @var Component[]
+     * @var Description[]
      **/
-    private $components;
+    private $config;
 
     /**
      * @var Command[]
      **/
     private $consoleCommands = [];
 
-    public function __construct(Component ...$components)
+    public function __construct(Description ...$config)
     {
-        $this->components = $components;
-
-        foreach ($this->components as $component) {
-            $this->addConsoleCommands(...$component->consoleCommands());
-        }
+        $this->config = $config;
     }
 
-    public function rewind()
+    public function componentDescriptions(): array
     {
-        $this->position = 0;
-    }
-
-    public function current()
-    {
-        return $this->components[$this->position];
-    }
-
-    public function key()
-    {
-        return $this->position;
-    }
-
-    public function next()
-    {
-        ++$this->position;
-    }
-
-    public function valid()
-    {
-        return isset($this->components[$this->position]);
+        return $this->config;
     }
 
     public function consoleCommands(): iterable
@@ -69,6 +44,8 @@ final class ComponentList implements ComponentCollection
     }
 
     /**
+     * Add console commands which are added to the code generator CLI
+     *
      * @param Command ...$consoleCommands
      */
     public function addConsoleCommands(Command ...$consoleCommands): void

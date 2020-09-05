@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 936 913" zoomAndPan="magnify"><defs/><g><!--MD5=[2e67415ce534bb734e279f8a09437205]
+cluster OpenCodeModeling::CodeGenerator::Code--><polygon fill="#FFFFFF" points="16,6,318,6,325,28.2969,914,28.2969,914,901,16,901,16,6" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="16" x2="325" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="296" x="20" y="20.9951">OpenCodeModeling::CodeGenerator::Code</text><!--MD5=[5fa8fcc6df3c42cef7e4b947a9e5053d]
+class OpenCodeModeling::CodeGenerator::Code::ClassInfo--><rect codeLine="6" fill="#F8F8F8" height="213.5625" id="OpenCodeModeling::CodeGenerator::Code::ClassInfo" style="stroke: #383838; stroke-width: 1.5;" width="540" x="195" y="41"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="88" x="421" y="58.9951">«interface»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="72" x="429" y="75.292">ClassInfo</text><line style="stroke: #383838; stroke-width: 1.5;" x1="196" x2="734" y1="83.5938" y2="83.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="224" x="201" y="100.5889">+ getPackagePrefix(): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="216" x="201" y="116.8857">+ getSourceFolder(): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="392" x="201" y="133.1826">+ getClassNamespaceFromPath(path: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="528" x="201" y="149.4795">+ getFullyQualifiedClassNameFromFilename(filename: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="328" x="201" y="165.7764">+ getClassNamespace(fcqn: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="288" x="201" y="182.0732">+ getClassName(fcqn: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="248" x="201" y="198.3701">+ getPath(fcqn: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="512" x="201" y="214.667">+ getFilenameFromPathAndName(path: String, name: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="424" x="201" y="230.9639">+ getPathAndNameFromFilename(filename: String): array</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="368" x="201" y="247.2607">+ isValidPath(filenameOrPath: String): Boolean</text><!--MD5=[e238a096ae1ab4e8458ffc15a548c553]
+class OpenCodeModeling::CodeGenerator::Code::Psr4Info--><rect codeLine="19" fill="#F8F8F8" height="547.5" id="OpenCodeModeling::CodeGenerator::Code::Psr4Info" style="stroke: #383838; stroke-width: 1.5;" width="436" x="32" y="337"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="222" y="354.9951">«class»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="64" x="218" y="371.292">Psr4Info</text><line style="stroke: #383838; stroke-width: 1.5;" x1="33" x2="467" y1="379.5938" y2="379.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="38" y="396.5889">- sourceFolder: String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="38" y="412.8857">- packagePrefix: String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="304" x="38" y="429.1826">- filterDirectoryToNamespace: callable</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="304" x="38" y="445.4795">- filterNamespaceToDirectory: callable</text><line style="stroke: #383838; stroke-width: 1.0;" x1="33" x2="467" y1="452.7813" y2="452.7813"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="88" x="38" y="469.7764">+ Psr4Info(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="168" x="70" y="486.0732">sourceFolder: String,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="70" y="502.3701">packagePrefix: String,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="296" x="70" y="518.667">filterDirectoryToNamespace: callable,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="288" x="70" y="534.9639">filterNamespaceToDirectory: callable</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="54" y="551.2607">)</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="16" x="38" y="567.5576">+ </text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="104" x="54" y="567.5576">fromComposer(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="70" y="583.8545"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="352" x="70" y="583.8545">classLoader: Composer::Autoload::ClassLoader</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="422" y="583.8545">,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="70" y="600.1514"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="288" x="70" y="600.1514">filterDirectoryToNamespace: callable</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="358" y="600.1514">,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="70" y="616.4482"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="288" x="70" y="616.4482">filterNamespaceToDirectory: callable</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="358" y="616.4482">,</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="70" y="632.7451"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="120" x="70" y="632.7451">exclude: String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="54" y="649.042"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="64" x="54" y="649.042">): array</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="224" x="38" y="665.3389">+ getPackagePrefix(): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="216" x="38" y="681.6357">+ getSourceFolder(): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="392" x="38" y="697.9326">+ getClassNamespaceFromPath(path: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="328" x="38" y="714.2295">+ getFullyQualifiedClassNameFromFilename(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="128" x="70" y="730.5264">filename: String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="54" y="746.8232">): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="328" x="38" y="763.1201">+ getClassNamespace(fcqn: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="288" x="38" y="779.417">+ getClassName(fcqn: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="248" x="38" y="795.7139">+ getPath(fcqn: String): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="232" x="38" y="812.0107">+ getFilenameFromPathAndName(</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="208" x="70" y="828.3076">path: String, name: String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="54" y="844.6045">): String</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="424" x="38" y="860.9014">+ getPathAndNameFromFilename(filename: String): array</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="368" x="38" y="877.1982">+ isValidPath(filenameOrPath: String): Boolean</text><!--MD5=[77556e297b8af8a671eea03d384f946c]
+class OpenCodeModeling::CodeGenerator::Code::ClassInfoList--><rect codeLine="39" fill="#F8F8F8" height="140.0781" id="OpenCodeModeling::CodeGenerator::Code::ClassInfoList" style="stroke: #383838; stroke-width: 1.5;" width="420" x="478" y="541"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="660" y="558.9951">«class»</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="104" x="636" y="575.292">ClassInfoList</text><line style="stroke: #383838; stroke-width: 1.5;" x1="479" x2="897" y1="583.5938" y2="583.5938"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="484" y="600.5889">- list: ClassInfo[0..*]</text><line style="stroke: #383838; stroke-width: 1.0;" x1="479" x2="897" y1="607.8906" y2="607.8906"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="344" x="484" y="624.8857">+ ClassInfoList(classInfo: ClassInfo[0..*])</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="384" x="484" y="641.1826">+ addClassInfo(classInfo: ClassInfo[1..*]): void</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="344" x="484" y="657.4795">+ classInfoForPath(path: String): ClassInfo</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="408" x="484" y="673.7764">+ classInfoForFilename(filename: String): ClassInfo</text><!--MD5=[569b9b266389874284ffd63fa8cfd3c9]
+link OpenCodeModeling::CodeGenerator::Code::ClassInfo to OpenCodeModeling::CodeGenerator::Code::ClassInfoList--><path codeLine="49" d="M516.3,255.05 C556.65,338.46 612.01,452.91 648.84,529.06 " fill="none" id="OpenCodeModeling::CodeGenerator::Code::ClassInfo-to-OpenCodeModeling::CodeGenerator::Code::ClassInfoList" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="654.59,540.94,655.5757,533.7966,649.3609,530.1393,648.3752,537.2827,654.59,540.94" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="549" y="300.9951">list</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="8" x="503.0739" y="275.439">1</text><text fill="#000000" font-family="DejaVu Sans Mono" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="611.3071" y="529.8965">1..*</text><!--MD5=[d75f4453c97ebb54f144b3c607e0ee9d]
+reverse link OpenCodeModeling::CodeGenerator::Code::ClassInfo to OpenCodeModeling::CodeGenerator::Code::Psr4Info--><path codeLine="50" d="M406.95,273.47 C397.59,293.54 387.58,315 377.33,336.98 " fill="none" id="OpenCodeModeling::CodeGenerator::Code::ClassInfo-backto-OpenCodeModeling::CodeGenerator::Code::Psr4Info" style="stroke: #383838; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="400.74,270.22,415.54,255.05,413.43,276.14,400.74,270.22" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[15eb11d6b6451d6a1b287b319804ba87]
+@startuml
+!include ../style.iuml
+set namespaceSeparator ::
+
+namespace OpenCodeModeling::CodeGenerator::Code  {
+
+		interface ClassInfo << interface >> {
+  		+ getPackagePrefix(): String
+  		+ getSourceFolder(): String
+  		+ getClassNamespaceFromPath(path: String): String
+  		+ getFullyQualifiedClassNameFromFilename(filename: String): String
+  		+ getClassNamespace(fcqn: String): String
+  		+ getClassName(fcqn: String): String
+  		+ getPath(fcqn: String): String
+  		+ getFilenameFromPathAndName(path: String, name: String): String
+  		+ getPathAndNameFromFilename(filename: String): array
+  		+ isValidPath(filenameOrPath: String): Boolean
+  	}
+
+	class Psr4Info << class >> {
+		- sourceFolder: String
+		- packagePrefix: String
+		- filterDirectoryToNamespace: callable
+		- filterNamespaceToDirectory: callable
+		- -
+		+ Psr4Info(\n    sourceFolder: String,\n    packagePrefix: String,\n    filterDirectoryToNamespace: callable,\n    filterNamespaceToDirectory: callable\n  )
+		+ <u>fromComposer(</u>\n    <u>classLoader: Composer::Autoload::ClassLoader</u>,\n    <u>filterDirectoryToNamespace: callable</u>,\n    <u>filterNamespaceToDirectory: callable</u>,\n    <u>exclude: String</u>\n  <u>): array</u>
+		+ getPackagePrefix(): String
+		+ getSourceFolder(): String
+		+ getClassNamespaceFromPath(path: String): String
+		+ getFullyQualifiedClassNameFromFilename(\n    filename: String\n  ): String
+		+ getClassNamespace(fcqn: String): String
+		+ getClassName(fcqn: String): String
+		+ getPath(fcqn: String): String
+		+ getFilenameFromPathAndName(\n    path: String, name: String\n  ): String
+		+ getPathAndNameFromFilename(filename: String): array
+		+ isValidPath(filenameOrPath: String): Boolean
+	}
+
+	class ClassInfoList << class >> {
+		- list: ClassInfo[0..*]
+		- -
+		+ ClassInfoList(classInfo: ClassInfo[0..*])
+		+ addClassInfo(classInfo: ClassInfo[1..*]): void
+		+ classInfoForPath(path: String): ClassInfo
+		+ classInfoForFilename(filename: String): ClassInfo
+	}
+
+}
+"OpenCodeModeling::CodeGenerator::Code::ClassInfo" "1 " - - - -o "               1..*" "OpenCodeModeling::CodeGenerator::Code::ClassInfoList": " list  "
+OpenCodeModeling::CodeGenerator::Code::ClassInfo <|.... OpenCodeModeling::CodeGenerator::Code::Psr4Info
+
+@enduml
+
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam DefaultFontName "DejaVu Sans Mono"
+skinparam DefaultFontSize 14
+skinparam ClassFontStyle bold
+hide empty fields
+hide empty methods
+hide circle
+
+skinparam pageMargin 0
+scale 1
+skinparam svgDimensionStyle false
+skinparam nodesep 10
+skinparam ranksep 20
+
+hide footbox
+
+skinparam sequence {
+    LifeLineBackgroundColor #DDD
+}
+set namespaceSeparator ::
+
+namespace OpenCodeModeling::CodeGenerator::Code  {
+
+		interface ClassInfo << interface >> {
+  		+ getPackagePrefix(): String
+  		+ getSourceFolder(): String
+  		+ getClassNamespaceFromPath(path: String): String
+  		+ getFullyQualifiedClassNameFromFilename(filename: String): String
+  		+ getClassNamespace(fcqn: String): String
+  		+ getClassName(fcqn: String): String
+  		+ getPath(fcqn: String): String
+  		+ getFilenameFromPathAndName(path: String, name: String): String
+  		+ getPathAndNameFromFilename(filename: String): array
+  		+ isValidPath(filenameOrPath: String): Boolean
+  	}
+
+	class Psr4Info << class >> {
+		- sourceFolder: String
+		- packagePrefix: String
+		- filterDirectoryToNamespace: callable
+		- filterNamespaceToDirectory: callable
+		- -
+		+ Psr4Info(\n    sourceFolder: String,\n    packagePrefix: String,\n    filterDirectoryToNamespace: callable,\n    filterNamespaceToDirectory: callable\n  )
+		+ <u>fromComposer(</u>\n    <u>classLoader: Composer::Autoload::ClassLoader</u>,\n    <u>filterDirectoryToNamespace: callable</u>,\n    <u>filterNamespaceToDirectory: callable</u>,\n    <u>exclude: String</u>\n  <u>): array</u>
+		+ getPackagePrefix(): String
+		+ getSourceFolder(): String
+		+ getClassNamespaceFromPath(path: String): String
+		+ getFullyQualifiedClassNameFromFilename(\n    filename: String\n  ): String
+		+ getClassNamespace(fcqn: String): String
+		+ getClassName(fcqn: String): String
+		+ getPath(fcqn: String): String
+		+ getFilenameFromPathAndName(\n    path: String, name: String\n  ): String
+		+ getPathAndNameFromFilename(filename: String): array
+		+ isValidPath(filenameOrPath: String): Boolean
+	}
+
+	class ClassInfoList << class >> {
+		- list: ClassInfo[0..*]
+		- -
+		+ ClassInfoList(classInfo: ClassInfo[0..*])
+		+ addClassInfo(classInfo: ClassInfo[1..*]): void
+		+ classInfoForPath(path: String): ClassInfo
+		+ classInfoForFilename(filename: String): ClassInfo
+	}
+
+}
+"OpenCodeModeling::CodeGenerator::Code::ClassInfo" "1 " - - - -o "               1..*" "OpenCodeModeling::CodeGenerator::Code::ClassInfoList": " list  "
+OpenCodeModeling::CodeGenerator::Code::ClassInfo <|.... OpenCodeModeling::CodeGenerator::Code::Psr4Info
+
+@enduml
+
+PlantUML version 1.2020.16(Sun Aug 23 22:20:43 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

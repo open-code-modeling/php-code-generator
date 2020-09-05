@@ -10,37 +10,57 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
+use OpenCodeModeling\CodeGenerator\Exception\WrongSlotType;
+
+/**
+ * Allows to manage the input and output data of the individual components.
+ */
 interface WorkflowContext
 {
     /**
-     * @param string $slotName
+     * Provides access to the respective slot data
+     *
+     * @param string $slotName Slot name under which the desired slot data can be found
      * @return mixed
      */
     public function get(string $slotName);
 
+    /**
+     * Checks if data is available for given slot name
+     *
+     * @param string $slotName Slot name under which the desired slot data can be found
+     * @return bool
+     */
     public function has(string $slotName): bool;
 
     /**
-     * @param string $slotName
-     * @param string|null $type Checks also slot type
+     * Ensures slot name is available with correct data type.
+     *
+     * @param string $slotName Slot name under which the desired slot data can be found
+     * @param string|null $type Checks slot type if given
+     * @throws WrongSlotType
      */
     public function assertSlot(string $slotName, string $type = null): void;
 
     /**
-     * Returns input data for given description
+     * Returns all input data required for calling a component from the WorkflowContext object
      *
-     * @param DescriptionWithInputSlot $description
+     * @param DescriptionWithInputSlot $description Component description
      * @return array
      */
     public function getByDescription(DescriptionWithInputSlot $description): array;
 
     /**
-     * @param string $slotName
-     * @param mixed $slotValue
+     * Stores the slot data
+     *
+     * @param string $slotName Slot name under which the data can be retrieved later
+     * @param mixed $slotValue Slot data to be stored
      */
     public function put(string $slotName, $slotValue): void;
 
     /**
+     * Returns all available slot names of the WorkflowContext object
+     *
      * @return string[]
      */
     public function getSlotNames(): array;

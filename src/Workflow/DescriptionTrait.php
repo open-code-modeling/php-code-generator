@@ -10,6 +10,9 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
+/**
+ * Implementation of \OpenCodeModeling\CodeGenerator\Workflow\Description
+ */
 trait DescriptionTrait
 {
     /**
@@ -17,6 +20,11 @@ trait DescriptionTrait
      */
     private $component;
 
+    /**
+     * Return the component to be executed
+     *
+     * @return callable
+     */
     public function component(): callable
     {
         return $this->component;

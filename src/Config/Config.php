@@ -12,10 +12,13 @@ namespace OpenCodeModeling\CodeGenerator\Config;
 
 use Symfony\Component\Console\Command\Command;
 
+/**
+ * The code generator supports different types of configuration via this interface
+ */
 interface Config
 {
     /**
-     * Optional list of CLI commands to register for Code Generation
+     * Optional list of CLI commands to register for code generator CLI
      *
      * @return Command[]
      */

@@ -12,6 +12,9 @@ namespace OpenCodeModeling\CodeGenerator\Console;
 
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContextMap;
 
+/**
+ * WorkflowContext helper
+ */
 final class WorkflowContext extends AbstractHelper
 {
     /**

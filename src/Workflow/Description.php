@@ -10,7 +10,16 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
+/**
+ * Must be implemented by all classes that describe a component for the code generator
+ */
 interface Description
 {
+    /**
+     * Returns the component. A component can be a function or a class. If a component is defined as a class, it must
+     * provide a __invoke() method.
+     *
+     * @return callable
+     */
     public function component(): callable;
 }
