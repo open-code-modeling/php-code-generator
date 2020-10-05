@@ -29,4 +29,9 @@ trait DescriptionTrait
     {
         return $this->component;
     }
+
+    public function description(): string
+    {
+        return \is_object($this->component) ? \get_class($this->component) : static::class;
+    }
 }

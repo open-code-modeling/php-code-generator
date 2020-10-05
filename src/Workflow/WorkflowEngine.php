@@ -10,12 +10,24 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Workflow;
 
+use OpenCodeModeling\CodeGenerator\Workflow\Monitoring\Monitoring;
+
 /**
  * The class `WorkflowEngine` processes a list of classes in a specified order which implement the `Description`
  * interface. The processing is started by the `run()` method.
  */
 final class WorkflowEngine
 {
+    /**
+     * @var Monitoring
+     **/
+    private $monitoring;
+
+    public function __construct(Monitoring $monitoring)
+    {
+        $this->monitoring = $monitoring;
+    }
+
     /**
      * Processes a list of classes in a specified order which implement the `Description`
      * interface.
@@ -26,16 +38,24 @@ final class WorkflowEngine
     public function run(WorkflowContext $context, Description ...$descriptions): void
     {
         foreach ($descriptions as $description) {
-            $component = $description->component();
+            try {
+                $this->monitoring->start($description);
+                $component = $description->component();
+                $this->monitoring->call($description);
 
-            if ($description instanceof DescriptionWithInputSlot) {
-                $result = $component(...$context->getByDescription($description));
-            } else {
-                $result = $component();
-            }
+                if ($description instanceof DescriptionWithInputSlot) {
+                    $result = $component(...$context->getByDescription($description));
+                } else {
+                    $result = $component();
+                }
 
-            if ($description instanceof DescriptionWithOutputSlot) {
-                $context->put($description->outputSlot(), $result);
+                if ($description instanceof DescriptionWithOutputSlot) {
+                    $context->put($description->outputSlot(), $result);
+                }
+                $this->monitoring->done($description);
+            } catch (\Throwable $e) {
+                $this->monitoring->error($description, $e);
+                break;
             }
         }
     }

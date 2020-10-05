@@ -11,9 +11,10 @@ declare(strict_types=1);
 namespace OpenCodeModeling\CodeGenerator\Console;
 
 use OpenCodeModeling\CodeGenerator\Config;
-use OpenCodeModeling\CodeGenerator\Config\WorkflowConfig;
 use OpenCodeModeling\CodeGenerator\Console;
 use OpenCodeModeling\CodeGenerator\Exception\RuntimeException;
+use OpenCodeModeling\CodeGenerator\Workflow\Monitoring\Monitoring;
+use OpenCodeModeling\CodeGenerator\Workflow\Monitoring\NullMonitor;
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext;
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowEngine;
 use Symfony\Component\Console\Command\Command;
@@ -39,11 +40,13 @@ final class WorkflowCommand extends Command
 
         $config = $this->loadConfig($workflowContext);
 
+        $monitor = $config->monitor();
+
         if ($config instanceof Config\WorkflowConfig) {
-            $this->executeWorkflow($config, $workflowContext);
+            $this->executeWorkflow($config, $workflowContext, $monitor);
         } elseif ($config instanceof Config\WorkflowCollection) {
             foreach ($config as $workflowConfig) {
-                $this->executeWorkflow($workflowConfig, $workflowContext);
+                $this->executeWorkflow($workflowConfig, $workflowContext, $monitor);
             }
         } else {
             throw new RuntimeException(
@@ -62,9 +65,12 @@ final class WorkflowCommand extends Command
         return $this->getHelper(Console\Config::class)->resolver()->resolve($workflowContext);
     }
 
-    private function executeWorkflow(WorkflowConfig $config, WorkflowContext $workflowContext): void
-    {
-        $workflowEngine = new WorkflowEngine();
+    private function executeWorkflow(
+        Config\WorkflowConfig $config,
+        WorkflowContext $workflowContext,
+        ?Monitoring $monitor
+    ): void {
+        $workflowEngine = new WorkflowEngine($monitor ?: new NullMonitor());
         $workflowEngine->run($workflowContext, ...$config->componentDescriptions());
     }
 }

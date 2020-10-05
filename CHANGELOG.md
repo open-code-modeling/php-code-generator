@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-* Nothing
+* Monitoring functionality to display code generation steps and progress.
 
 ### Deprecated
 
