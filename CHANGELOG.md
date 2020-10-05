@@ -14,7 +14,12 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Removed
 
-* Nothing
+The following classes are removed (deprecated in 0.2.0).
+
+* Class `\OpenCodeModeling\CodeGenerator\Config\ArrayConfig`
+* Class `\OpenCodeModeling\CodeGenerator\Config\Component`
+* Class `\OpenCodeModeling\CodeGenerator\Config\ComponentCollection`
+* Class `\OpenCodeModeling\CodeGenerator\Config\ComponentList`
 
 ### Fixed
 

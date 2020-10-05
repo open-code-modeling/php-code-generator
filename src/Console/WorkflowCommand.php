@@ -10,11 +10,9 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Console;
 
-use OpenCodeModeling\CodeGenerator\Config\Component;
-use OpenCodeModeling\CodeGenerator\Config\ComponentCollection;
-use OpenCodeModeling\CodeGenerator\Config\Config;
-use OpenCodeModeling\CodeGenerator\Config\WorkflowCollection;
+use OpenCodeModeling\CodeGenerator\Config;
 use OpenCodeModeling\CodeGenerator\Config\WorkflowConfig;
+use OpenCodeModeling\CodeGenerator\Console;
 use OpenCodeModeling\CodeGenerator\Exception\RuntimeException;
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowContext;
 use OpenCodeModeling\CodeGenerator\Workflow\WorkflowEngine;
@@ -27,49 +25,44 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 final class WorkflowCommand extends Command
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('ocmcg:workflow:run')
             ->setDescription('Executes workflow from configuration file to generate code');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         /** @var WorkflowContext $workflowContext */
-        $workflowContext = $this->getHelper(\OpenCodeModeling\CodeGenerator\Console\WorkflowContext::class)->context();
+        $workflowContext = $this->getHelper(Console\WorkflowContext::class)->context();
 
         $config = $this->loadConfig($workflowContext);
 
-        if ($config instanceof WorkflowConfig
-            || $config instanceof Component
-        ) {
+        if ($config instanceof Config\WorkflowConfig) {
             $this->executeWorkflow($config, $workflowContext);
-        } elseif ($config instanceof WorkflowCollection
-            || $config instanceof ComponentCollection
-        ) {
+        } elseif ($config instanceof Config\WorkflowCollection) {
             foreach ($config as $workflowConfig) {
                 $this->executeWorkflow($workflowConfig, $workflowContext);
             }
         } else {
             throw new RuntimeException(
-                \sprintf('$config must implement %s or %s', WorkflowConfig::class, WorkflowCollection::class)
+                \sprintf(
+                    '$config must implement %s or %s', Config\WorkflowConfig::class,
+                    Config\WorkflowCollection::class
+                )
             );
         }
 
         return 0;
     }
 
-    private function loadConfig(WorkflowContext $workflowContext): Config
+    private function loadConfig(WorkflowContext $workflowContext): Config\Config
     {
-        return $this->getHelper(\OpenCodeModeling\CodeGenerator\Console\Config::class)->resolver()->resolve($workflowContext);
+        return $this->getHelper(Console\Config::class)->resolver()->resolve($workflowContext);
     }
 
-    /**
-     * @param WorkflowConfig|Component $config
-     * @param WorkflowContext $workflowContext
-     */
-    private function executeWorkflow($config, WorkflowContext $workflowContext): void
+    private function executeWorkflow(WorkflowConfig $config, WorkflowContext $workflowContext): void
     {
         $workflowEngine = new WorkflowEngine();
         $workflowEngine->run($workflowContext, ...$config->componentDescriptions());
