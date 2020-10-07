@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
+use OpenCodeModeling\CodeGenerator\Workflow\Monitoring\Monitoring;
 use Symfony\Component\Console\Command\Command;
 
 /**
@@ -28,6 +29,11 @@ final class WorkflowList implements WorkflowCollection
      * @var Command[]
      **/
     private $consoleCommands = [];
+
+    /**
+     * @var Monitoring|null
+     */
+    private $monitor;
 
     public function __construct(WorkflowConfig ...$components)
     {
@@ -76,5 +82,15 @@ final class WorkflowList implements WorkflowCollection
         foreach ($consoleCommands as $consoleCommand) {
             $this->consoleCommands[] = $consoleCommand;
         }
+    }
+
+    public function monitor(): ?Monitoring
+    {
+        return $this->monitor;
+    }
+
+    public function setMonitor(Monitoring $monitor): void
+    {
+        $this->monitor = $monitor;
     }
 }

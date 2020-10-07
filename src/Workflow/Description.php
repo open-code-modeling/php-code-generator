@@ -22,4 +22,11 @@ interface Description
      * @return callable
      */
     public function component(): callable;
+
+    /**
+     * A description of the component (purpose, what's generated, transformed, ...)
+     *
+     * @return string
+     */
+    public function description(): string;
 }

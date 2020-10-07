@@ -8,19 +8,17 @@
 
 declare(strict_types=1);
 
-namespace OpenCodeModeling\CodeGenerator\Config;
+namespace OpenCodeModeling\CodeGenerator\Workflow\Monitoring;
 
 use OpenCodeModeling\CodeGenerator\Workflow\Description;
 
-/**
- * @deprecated Use \OpenCodeModeling\CodeGenerator\Config\WorkflowConfig
- */
-interface Component extends Config
+interface Monitoring
 {
-    /**
-     * Returns the component descriptions.
-     *
-     * @return Description[]
-     */
-    public function componentDescriptions(): array;
+    public function start(Description $description): void;
+
+    public function call(Description $description): void;
+
+    public function done(Description $description): void;
+
+    public function error(Description $description, \Throwable $e): void;
 }

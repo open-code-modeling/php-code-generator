@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Config;
 
+use OpenCodeModeling\CodeGenerator\Workflow\Monitoring\Monitoring;
 use Symfony\Component\Console\Command\Command;
 
 /**
@@ -23,4 +24,11 @@ interface Config
      * @return Command[]
      */
     public function consoleCommands(): iterable;
+
+    /**
+     * Monitoring instance for the workflow engine
+     *
+     * @return Monitoring|null
+     */
+    public function monitor(): ?Monitoring;
 }
