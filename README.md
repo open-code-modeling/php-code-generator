@@ -7,7 +7,7 @@ generator can be individually extended and configured by developers.
 ## Installation
 
 ```bash
-$ composer require open-code-modeling/php-code-generator --dev
+composer require open-code-modeling/php-code-generator --dev
 ```
 
 ## Documentation
